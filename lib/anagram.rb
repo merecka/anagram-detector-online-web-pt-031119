@@ -13,7 +13,6 @@ class Anagram
     anagrams.collect do |x|
       if (@word.split("").sort == x.split("").sort)
         match_array << x.split
-    #    binding.pry
       end
     end
     match_array.flatten
