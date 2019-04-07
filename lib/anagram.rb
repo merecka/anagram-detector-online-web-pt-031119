@@ -10,6 +10,7 @@ class Anagram
     anagrams.each do |x|
       if (@word.split("").sort == x.split("").sort)
         x.split
+        binding.pry
       else
         a = []
         return a
